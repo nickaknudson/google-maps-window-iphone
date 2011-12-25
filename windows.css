@@ -1,0 +1,121 @@
+.iPhoneWindow {
+	position:absolute;
+	width:200px;
+	margin-top:-14px;
+	height:28px;
+	padding: {
+		left:5px;
+		top:2px;
+		right:5px;
+		bottom:2px;
+	}
+	cursor:default;
+	border: {
+		style:solid;
+		width:1px;
+		radius:4px;
+		color:#2C2C2C;
+	}
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(112,112,112)),color-stop(0.51, rgb(94,94,94)),color-stop(0.52, rgb(57,57,57)));
+	background: -moz-linear-gradient(center top,rgb(112,112,112) 0%,rgb(94,94,94) 51%,rgb(57,57,57) 52%);
+}
+.iPhoneWindow:before {
+	content:'';
+	display:block;
+	position:absolute;
+	top:100%; /*should be set to 100% */
+	right:48px;
+	width:0;
+	height:0;
+	border: {
+		color:#2C2C2C transparent transparent transparent;
+		style:solid;
+		width:13px;
+	}
+}
+.iPhoneWindow:after {
+	content:'';
+	display:block;
+	position:absolute;
+	top:100%; /*should be set to 100% */
+	right:49px;
+	width:0;
+	height:0;
+	border: {
+		color:#393939 transparent transparent transparent;
+		style:solid;
+		width:12px;
+	}
+}
+.iPhoneWindowTestHover {
+	position:absolute;
+	width:200px;
+	font-size:14px;
+	text-shadow:0 -1px 0 #000;
+	font-family:arial;
+	font-weight:bold;
+	overflow:visible;
+	min-height:16px;
+	max-height:220px;
+}
+.iPhoneWindowBody, .iPhoneWindowTsub {
+	position:absolute;
+	width:200px;
+	font-size:14px;
+	text-shadow:0 -1px 0 #000;
+	color:#fff;
+	font-family:arial;
+	font-weight:bold;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.iPhoneWindowBodyHover:hover {
+	width:210px;
+	position:absolute;
+	left:-4px;
+	top:-4px;
+	padding:2px;
+	text-shadow:none;
+	font-weight:normal;
+	white-space:normal;
+	overflow:auto;
+	min-height:16px;
+	max-height:220px;
+	background:#383838;
+	z-index:500;
+	border: {
+		style:solid;
+		width:2px;
+		color:#282828;
+	}
+}
+.iPhoneWindowTsub {
+	position:absolute;
+	left:10px;
+	bottom:0px;
+	font-size:10px;
+	color:#fff;
+	font-family:arial;
+	cursor: help;
+}
+.iPhoneWindowArrow {
+	height:18px;
+	width:18px;
+	position:absolute;
+	top:2px;
+	right:2px;
+}
+.iPhoneWindowArrowDown {
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-moz-transform:rotate(90deg); /* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+	-o-transform:rotate(90deg); /* Opera */
+}
+.iPhoneWindowShadow {
+	position:absolute;
+	box-shadow:40px 15px 10px rgba(33,33,33,0.3);
+	-webkit-box-shadow:40px 15px 10px rgba(33,33,33,0.3); /* Safari and Chrome */
+	background-color:transparent;
+} 
